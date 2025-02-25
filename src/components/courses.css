@@ -1,0 +1,138 @@
+.course{
+    padding: 7rem 5rem;
+    .course-container{
+        gap: 3rem;
+        z-index: 99;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .heading{
+            h1{
+                font-size: 5rem;
+                text-transform: uppercase;
+                font-weight: 800;
+                text-align: center;
+                span{
+                    color: var(--primary-color);
+                }
+            }
+        }
+        .input-container{
+            background-color: #fff;
+            border-radius: 2rem;
+            display: flex;
+            align-items: center;
+            padding: 1rem 2rem;
+            gap: 2rem;
+            width: 50%;
+            outline: 1px solid #0003;
+            transition: all 0.3s ease-in;
+            box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.14);
+            input{
+                background-color: transparent;
+                outline: none;
+                border: none;
+                width: 100%;
+
+            }
+
+            &:focus-within{
+                background-color: #0001;
+                color: #000;
+                outline-color: #000;
+
+            }
+        }
+
+        .inner-container{
+            display: flex;
+            gap: 5rem;
+            width: 100%;
+            .right{
+                flex: 1;
+                display: flex;
+                flex-direction: row;
+                
+                .card{
+                    border: #000 2px solid;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 2rem;
+                    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+                    border-radius: 1.2rem;
+                    background-color: white;
+                    color: #fff;
+                    /* background-color: white; */
+            
+                    img{
+                        width: 20rem ;
+                        height: auto    ;
+                    }
+            
+                    h1{
+                        font-weight: 800;
+                        font-size: 1.8rem;
+                    }
+            
+                    .list-container{
+                        width: 100%;
+                        gap: 1rem;
+                        ul{
+                            display: flex;
+                            list-style: none;
+                            text-align: center;
+                            flex-direction: column;
+                            gap: 1rem;
+                            .border-div{
+                                width: 100%;
+                                background-color: #fff4;
+                                height: .1rem;
+                            }
+            
+                            li{
+                                font-size: 1.1rem;
+                                padding: 0.5rem;
+                                transition: all .3s ease-in;
+                                cursor: pointer;
+                                border: 1px solid transparent;
+                                border-radius: 2rem;
+                                text-align: left;
+                                color: #000;
+                                &:hover{
+                                    background-color: white;
+                                    border-color: #fff6;
+                                }
+                            }
+            
+                            .price{
+                                color: #000;
+                            }
+            
+                            .arrow{
+                                font-size: 1rem;
+                                height: 2.5rem;
+                                border-radius: 3rem;
+                                width: 18rem;
+                                background-color: #6900b9;
+                                color: white;
+                            }
+                        }
+            
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,157 @@
+.account{
+    padding: 7rem 6rem;
+    .account-container{
+        gap: 5rem;
+        z-index: 99;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .heading{
+            h1{
+                font-size: 5rem;
+                text-transform: uppercase;
+                font-weight: 800;
+                text-align: center;
+                span{
+                    color: var(--primary-color);
+                }
+            }
+        }
+
+        .inner-account-container{
+            display: flex;
+            gap: 10rem;
+            width: 100%;
+            .left{
+                /* flex: 3; */
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                .upper-container{
+                    display: flex;
+                    gap: 3rem;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+
+                    .left-upper-container{
+                        width: 75%;
+                        padding: 2rem;
+                        border-radius: 1.2rem;
+                        border: 2px solid #000;
+
+                        img{
+                            width:20rem;
+                        }
+                        &:hover{
+                            background-color: #000;
+                            color: #fff;
+                            cursor: default;
+                            .progress-bar{
+                                background-color: #fff2;
+                            }
+                        }
+                    }
+
+                    .rightf{
+                        height: 100%;
+                        width: 75%;
+                        gap: 1.5rem;
+                        display:flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        
+                        h1{
+                            font-size: 2rem;
+                            font-weight: 800;
+                            line-height: 1;
+                        }
+                       
+
+                        .lower{
+                        width: 80%;
+                        margin-top: 1rem;
+                        padding: 2rem;
+                        border-radius: 1.2rem;
+                        border: 2px solid #000;
+                        display:flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        transition: all .3s ease-in;
+                        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+                        &:hover{
+                            background-color: #000;
+                            color: #fff;
+                            cursor: default;
+
+                            }
+                        }
+
+                        
+                    }
+
+                    .leftf{
+                        gap: 2rem;
+                    }
+
+                    .leftf1 , .leftf2{
+                        gap:1.5rem;
+                        width: 100%;
+                        padding: 2rem;
+                        border-radius: 1.2rem;
+                        border: 2px solid #000;
+                        display:flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 1rem;
+
+                        .text-container{
+                            width: 100%;
+                            justify-content: space-between;
+                            display: flex;
+
+                        }
+                        img{
+                            width: 12rem;
+                            height: 12rem;
+                            border-radius: 50%;
+                            object-fit: cover;
+                            outline: 2px solid #000;
+                            outline-offset: .2rem;
+                        }
+
+                        button{
+                            background-color:var(--primary-color) ;
+                            border-radius: 2rem;
+                            padding: 1rem;
+                            color: white;
+                        }
+
+
+
+                        h2{
+                            font-size: 1.7rem;
+                            align-items: center;
+                        }
+                        transition: all .3s ease-in;
+                        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+                        &:hover{
+                            background-color: #000;
+                            color: #fff;
+                            cursor: default;
+
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+}
